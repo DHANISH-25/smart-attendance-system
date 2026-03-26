@@ -1,0 +1,38 @@
+# ============================================================
+#  STEP 1 — INSTALL ALL REQUIRED PACKAGES
+#  Run these commands in your terminal / command prompt
+# ============================================================
+
+# Basic packages (easy install)
+pip install opencv-python
+pip install numpy
+pip install imutils
+pip install scipy
+
+# face_recognition (needs cmake first on Windows)
+# On Windows: https://cmake.org/download/ → install cmake first
+pip install face_recognition
+
+# dlib (for facial landmarks / blink detection)
+# This takes 5-10 minutes — DO NOT close terminal!
+pip install dlib
+
+# ============================================================
+# VERIFY INSTALLATION — run this in Python to check:
+# ============================================================
+
+# import cv2
+# import face_recognition
+# import dlib
+# print("✅ All packages installed successfully!")
+
+# ============================================================
+# IF dlib FAILS on Windows, try this instead:
+# pip install dlib==19.22.99 --only-binary=:all:
+# ============================================================
+
+# ALSO DOWNLOAD THIS FILE (needed for blink detection):
+# shape_predictor_68_face_landmarks.dat
+# Download from:
+# http://dlib.net/files/shape_predictor_68_face_landmarks.dat.bz2
+# Extract and place in the same folder as your .py files

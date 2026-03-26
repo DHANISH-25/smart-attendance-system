@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+*.pkl
+*.dat
+attendance_records/
+known_faces/
+.env
